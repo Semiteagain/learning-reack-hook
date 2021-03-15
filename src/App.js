@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import FileA from './components/FileA'
 
+
+export const MusicNameContext = React.createContext()
+export const MovieNameContext = React.createContext()
+export const LocationContext = React.createContext()
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MusicNameContext.Provider value='2face idibia'>
+        <MovieNameContext.Provider value='Kia and pawpaw'>
+          <LocationContext.Provider value='Nigeria'>
+          <FileA />
+        
+        
+          </LocationContext.Provider>
+        </MovieNameContext.Provider>
+     </MusicNameContext.Provider>
+
+    
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
