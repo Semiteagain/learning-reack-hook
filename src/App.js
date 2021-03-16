@@ -1,5 +1,6 @@
 import React from 'react'
 import FileA from './components/FileA'
+import ReducerUse from './components/ReducerUse'
 
 
 export const MusicNameContext = React.createContext()
@@ -18,7 +19,7 @@ function App() {
         </MovieNameContext.Provider>
      </MusicNameContext.Provider>
 
-    
+    <ReducerUse />
 
     </div>
   )
