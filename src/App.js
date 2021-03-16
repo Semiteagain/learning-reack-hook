@@ -1,5 +1,6 @@
 import React from 'react'
 import FileA from './components/FileA'
+import Increaserss from './components/Increaserss'
 import ReducerUse from './components/ReducerUse'
 
 
@@ -20,7 +21,7 @@ function App() {
      </MusicNameContext.Provider>
 
     <ReducerUse />
-
+    <Increaserss />
     </div>
   )
 }
